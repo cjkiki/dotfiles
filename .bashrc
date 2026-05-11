@@ -28,9 +28,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
 
-# aliases
-alias nv='nvim'
-
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -60,15 +57,22 @@ alias gp='git push'
 alias gl='git log --oneline --graph --decorate'
 alias gd='git diff'
 
-# other utils
+# aliases
+alias s='sudo'
 alias c='clear'
 alias h='history | grep'
+alias v='nvim'
 alias reload='source ~/.bashrc'
 alias path='echo $PATH | tr ":" "\n"'
-
-
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/home/kiki/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
