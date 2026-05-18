@@ -300,9 +300,9 @@
     {
       "type": "locale",
       "keyIcon": ""
-    }
-    /* "break",
-    {
+    },
+    "break"
+    /* {
       "type": "colors",
       "key": " ",
       "keyIcon": "",
