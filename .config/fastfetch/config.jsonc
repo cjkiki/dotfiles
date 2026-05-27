@@ -38,7 +38,7 @@
     "hideCursor": false,
     "separator": ": ",
     "color": {
-      "keys": "red",
+      "keys": "white",
       "title": "white",
       "output": "white",
       "separator": "white"
@@ -301,8 +301,8 @@
       "type": "locale",
       "keyIcon": ""
     },
-    "break"
-    /* {
+    "break",
+    {
       "type": "colors",
       "key": " ",
       "keyIcon": "",
@@ -316,6 +316,6 @@
         ]
       },
       "brightness": "default"
-    } */
+    }
   ]
 }
